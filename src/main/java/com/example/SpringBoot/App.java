@@ -26,7 +26,12 @@ public class App
         map.addAttribute("host", "My test");
 		return "index";
 	}
-	
+
+    @RequestMapping("/hello")
+    public String test2(ModelMap map){
+        map.addAttribute("host", "My test");
+        return "helloworld";
+    }
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
